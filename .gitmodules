@@ -1,0 +1,4 @@
+[submodule "RescueShelter.SPA"]
+	path = RescueShelter
+	url = https://github.com/kscott5/RescueShelter
+	branch = master
