@@ -2,6 +2,9 @@
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 
+// https://stackoverflow.com/questions/56547215/react-testing-library-why-is-tobeinthedocument-not-a-function
+import '@testing-library/jest-dom/extend-expect';
+
 configure({ adapter: new Adapter() });
 
 // https://create-react-app.dev/docs/running-tests/#initializing-test-environment
