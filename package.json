@@ -24,7 +24,7 @@
     "enzyme-adapter-react-16": "^1.15.2",
     "file-loader": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest": "24.9.0",
+    "jest": "26.0.0",
     "jest-enzyme": "^7.1.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
@@ -35,6 +35,6 @@
     "rescueshelter": "^1.0.3",
     "semantic-ui-react": "^1.0.0",
     "ts-jest": "^26.1.3",
-    "typescript": "~3.7.2"
+    "typescript": "^3.9.7"
   }
 }
