@@ -1,10 +1,10 @@
 # Rescue Shelter Test Project
-
+[Create React App Test](https://create-react-app.dev/docs/running-tests/#docsNav)
 
 [@import SyntaxError:](https://stackoverflow.com/questions/54976344/jest-fails-when-css-uses-import)
 
 
-## [IMAGE:PNG] SyntaxError: Invalid or unexpected token
+### [IMAGE:PNG] SyntaxError: Invalid or unexpected token
 
 ```
 /home/kkscott/apps/nodeapps/rescueshelter/RescueShelter.Test/node_modules/rescueshelter/src/images/home.png:1  
@@ -26,3 +26,30 @@ moduleNameMapper: {
     "\\.(png|svg|jpg|gif)$": "file-loader"
   }
 ```
+
+
+### [Initializing Test Environment](https://create-react-app.dev/docs/running-tests/#initializing-test-environment)
+
+#### src/setupTest.js
+```
+const localStorageMock = {
+  getItem: jest.fn(),
+  setItem: jest.fn(),
+  removeItem: jest.fn(),
+  clear: jest.fn(),
+};
+global.localStorage = localStorageMock;
+```
+
+#### setuptest.env.ts
+```
+const localStorageMock = {
+    getItem: jest.fn(),
+    setItem: jest.fn(),
+    removeItem: jest.fn(),
+    clear: jest.fn(),
+    key: jest.fn(), // .js file version does not contain
+    length: jest.fn().length // .js version file does not contain
+  };
+  global.localStorage = localStorageMock;
+  ```
