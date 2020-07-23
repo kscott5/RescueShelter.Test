@@ -5,7 +5,7 @@ module.exports = {
   moduleFileExtensions: ['js', 'ts', 'tsx'],
   moduleNameMapper: {
     "\\.css$": "identity-obj-proxy",
-    "^lodash-es$": "lodash"
+    "\\.(png|svg|jpg|gif)$": "file-loader"
   },
   transformIgnorePatterns: [
     "node_modules/(?!(react|react-native|rescueshelter|react-native-button)/)"
