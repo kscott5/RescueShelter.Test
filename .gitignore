@@ -21,7 +21,7 @@
 /logs
 /data
 package-lock.json
-#.vscode
+.vscode
 /src/**/*.js
 
 *.log
