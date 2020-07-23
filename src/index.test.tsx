@@ -1,9 +1,13 @@
-import { configure, render } from '@testing-library/react';
 import * as React from "react";
-import renderer from "react-test-renderer";
 
-configure({ testIdAttribute: 'App' });
+
+//import App from "rescueshelter/components/app";
 
 test('ts-jest initial configuration', () => {
     expect(true).toBeTruthy();
+})
+
+test('App.ts', () =>{
+  //  var a = new App({});
+    
 })

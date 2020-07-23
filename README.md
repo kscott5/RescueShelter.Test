@@ -1,4 +1,4 @@
 # Rescue Shelter Test Project
 
 
-## Architecture
+[@import SyntaxError:](https://stackoverflow.com/questions/54976344/jest-fails-when-css-uses-import)
