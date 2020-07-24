@@ -10,6 +10,7 @@
     "test": "react-scripts test"
   },
   "devDependencies": {
+    "@jest/globals": "^26.1.0",
     "@testing-library/jest-dom": "^5.11.1",
     "@testing-library/react": "^9.3.2",
     "@testing-library/user-event": "^7.1.2",
@@ -30,7 +31,7 @@
     "react": "16.13.0",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "rescueshelter": "^1.0.0",
+    "rescueshelter": "1.0.6",
     "ts-jest": "^26.1.3",
     "ts-loader": "^8.0.1",
     "typescript": "~3.7.2"
