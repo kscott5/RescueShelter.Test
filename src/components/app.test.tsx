@@ -4,7 +4,7 @@ import * as ReactDOM from "react-dom";
 import {render} from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
-import {App} from 'rescueshelter/dist/components/app'
+import App from "rescueshelter/components/app";
 
 beforeAll(() => {
     var title = document.createElement("title");
@@ -61,5 +61,3 @@ it('<App/> test https://ogp.me/ meta tag property', () => {
     expect(meta.content).toBe('http://localhost:3301');    
     
 });
-
-it('<App/>')

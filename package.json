@@ -26,17 +26,15 @@
     "@typescript-eslint/parser": "^3.7.0",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
-    "eslint": "^7.5.0",
+    "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.20.3",
     "file-loader": "^6.0.0",
     "identity-obj-proxy": "^3.0.0",
-    "jest-enzyme": "^7.1.2",
-    "jest-react": "^0.11.1",
-    "react": "16.13.0",
+    "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
-    "ts-jest": "^26.1.3",
-    "ts-loader": "^8.0.1",
-    "typescript": "~3.7.2"
+    "rescueshelter": "^1.0.8",
+    "ts-jest": "^26.1.4",
+    "typescript": "^3.9.7"
   }
 }
