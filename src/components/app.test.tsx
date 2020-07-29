@@ -6,7 +6,13 @@ import "@testing-library/jest-dom/extend-expect";
 
 import App from "rescueshelter/components/app";
 
+let container;
+
 beforeAll(() => {
+    container = document.createElement("div");
+    container.id = "appContent";
+    document.body.appendChild(container);
+
     var title = document.createElement("title");
     document.head.appendChild(title);
 
@@ -34,10 +40,12 @@ beforeAll(() => {
     og.setAttribute("property", "og:url");
     document.head.appendChild(og);
 
-    render(<App/>);
+    render(<App/>, {container: container});
 })
 
 afterAll(() => {
+    // document.body.removeChild(container);
+    container = null;
 });
 
 it('<App/> test https://ogp.me/ meta tag property', () => {
