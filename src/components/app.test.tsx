@@ -33,14 +33,14 @@ beforeAll(() => {
     og = document.createElement("meta");
     og.setAttribute("property", "og:url");
     document.head.appendChild(og);
+
+    render(<App/>);
 })
 
 afterAll(() => {
 });
 
 it('<App/> test https://ogp.me/ meta tag property', () => {
-    
-    render(<App/>);
 
     var meta = document.querySelector("meta[property='og:description']") as HTMLMetaElement;
     expect(meta.content).toBe('');
@@ -60,4 +60,18 @@ it('<App/> test https://ogp.me/ meta tag property', () => {
     meta = document.querySelector("meta[property='og:url']") as HTMLMetaElement;
     expect(meta.content).toBe('http://localhost:3301');    
     
+});
+
+it('<App/> test navigation links', () => {
+    var link = document.querySelector("div[id='home'] a") as HTMLAnchorElement;
+    expect(link.href).toBe('/');
+    expect(link.innerText).toBe('Home');
+
+    link = document.querySelector("div[id='animals'] a") as HTMLAnchorElement;
+    expect(link.href).toBe('/animas');
+    expect(link.innerText).toBe('Animals');
+
+    link = document.querySelector("div[id='sponsors'] a") as HTMLAnchorElement;
+    expect(link.href).toBe('/sponsors');
+    expect(link.innerText).toBe('Sponsors');
 });
