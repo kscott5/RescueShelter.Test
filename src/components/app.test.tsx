@@ -1,18 +1,14 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
 
-import {render} from "@testing-library/react";
+import {render, cleanup} from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
 
 import App from "rescueshelter/components/app";
 
-let container;
+let appContent;
 
 beforeAll(() => {
-    container = document.createElement("div");
-    container.id = "appContent";
-    document.body.appendChild(container);
-
     var title = document.createElement("title");
     document.head.appendChild(title);
 
@@ -40,12 +36,13 @@ beforeAll(() => {
     og.setAttribute("property", "og:url");
     document.head.appendChild(og);
 
-    render(<App/>, {container: container});
+    const {container} = render(<App/>);
+    appContent = container;
 })
 
 afterAll(() => {
-    // document.body.removeChild(container);
-    container = null;
+    cleanup();
+    appContent = null;
 });
 
 it('<App/> test https://ogp.me/ meta tag property', () => {
